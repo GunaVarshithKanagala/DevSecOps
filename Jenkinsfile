@@ -35,17 +35,14 @@ pipeline {
     
     post {
         always {
-            emailext (
+            emailext(
                 subject: "Build ${currentBuild.result}: ${env.JOB_NAME} - ${env.BUILD_NUMBER}",
-                body: """
-                Build Status: ${currentBuild.result}
-                Build Number: ${env.BUILD_NUMBER}
-                Build URL: ${env.BUILD_URL}
-                
-                Check console output at ${env.BUILD_URL} to view full results.
-                """,
-                to: "gunavarshithkanagala@gmail.com"
-                attachmentsPattern: "*.log"
+                body: """Build Status: ${currentBuild.result}
+Build Number: ${env.BUILD_NUMBER}
+Build URL: ${env.BUILD_URL}
+
+Check console output at ${env.BUILD_URL} to view full results.""",
+                to: "your_email@gmail.com"
             )
         }
     }
