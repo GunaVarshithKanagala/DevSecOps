@@ -42,7 +42,7 @@ Build Number: ${env.BUILD_NUMBER}
 Build URL: ${env.BUILD_URL}
 
 Check console output at ${env.BUILD_URL} to view full results.""",
-                to: "your_email@gmail.com"
+                to: "gunavarshithkanagala@gmail.com"
             )
         }
     }
