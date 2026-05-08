@@ -44,7 +44,7 @@ pipeline {
                 
                 Check console output at ${env.BUILD_URL} to view full results.
                 """,
-                to: "gunavarshithkanagala@gmail.com
+                to: "gunavarshithkanagala@gmail.com"
                 attachmentsPattern: "*.log"
             )
         }
